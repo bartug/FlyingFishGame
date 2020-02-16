@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:src="@drawable/kbalik"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kırmızı Uçan Balık"
+        android:textAlignment="center"
+        android:id="@+id/textView1"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:textSize="44dp" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1285295181757267/2176288118">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
